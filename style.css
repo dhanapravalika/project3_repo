@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #eef2f7;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.container {
+    width: 480px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.08);
+    animation: fadeIn 1.2s ease;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 28px;
+    color: #283c63;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+input, select {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #cdd9ed;
+    outline: none;
+    background: #f7f9fc;
+    color: #283c63;
+}
+
+.addBtn {
+    padding: 12px 15px;
+    background: #4a90e2;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addBtn:hover {
+    background: #357acb;
+    transform: scale(1.05);
+}
+
+.searchBar {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background: #f7f9fc;
+    border: 1px solid #cdd9ed;
+    outline: none;
+    color: #283c63;
+}
+
+.taskList {
+    padding: 0;
+    margin-top: 15px;
+}
+
+.task {
+    list-style: none;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 6px solid #4a90e2;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    animation: slideUp 0.4s ease;
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+
+.high { background: #e63946; }
+.medium { background: #ffb703; color: #333; }
+.low { background: #2a9d8f; }
+
+.delete-btn {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: #cc2f3a;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
