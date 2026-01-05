@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expressive Smart To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fadeIn">
+    <h1 class="title glowText">✨ Smart Productivity Manager</h1>
+
+    <div class="input-section slideDown">
+        <input type="text" id="taskInput" placeholder="What do you want to accomplish today?">
+
+        <select id="priority">
+            <option value="Low">🟢 Low Priority</option>
+            <option value="Medium">🟡 Medium Priority</option>
+            <option value="High">🔴 High Priority</option>
+        </select>
+
+        <select id="category">
+            <option value="Personal">💙 Personal</option>
+            <option value="Work">💼 Work</option>
+            <option value="Study">📘 Study</option>
+        </select>
+
+        <button class="addBtn" onclick="addTask()">Add Task</button>
+    </div>
+
+    <input type="text" id="search" class="searchBar" placeholder="🔍 Search tasks..." onkeyup="searchTask()">
+
+    <h3 id="taskCount" class="taskCount fadeIn"></h3>
+
+    <ul id="taskList" class="taskList"></ul>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
